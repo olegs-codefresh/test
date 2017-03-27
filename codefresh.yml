@@ -1,8 +1,10 @@
-my_step:
-  type: composition
-  composition:
-    version: '2'
-    services:
-       web:
-         image: ubuntu
-         command: sh -c 'echo ${{CF_BRANCH}}'
+version: '1.0'
+steps:
+  my_step:
+    type: composition
+    composition:
+      version: '2'
+      services:
+         web:
+           image: ubuntu
+           command: sh -c 'echo ${{CF_BRANCH}}'
