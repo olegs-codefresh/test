@@ -4,15 +4,15 @@ steps:
     title: 'Launching composition v3'
     type: launch-composition
     composition:
-    version: '3'
-    services:
-      app:
-        image: mattermost/platform
-        restart: always
-        environment:
-          - VIRTUAL_HOST=mm.d1.darg.ws
-          - VIRTUAL_PORT=80
-      
+      version: '3'
+      services:
+        app:
+          image: mattermost/platform
+          restart: always
+          environment:
+            - VIRTUAL_HOST=mm.d1.darg.ws
+            - VIRTUAL_PORT=80
+
 
 
       
