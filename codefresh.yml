@@ -1,6 +1,6 @@
 version: '1.0'
 steps:
-  launch
+  launch:
     title: 'Launching composition v3'
     type: launch-composition
     composition:
