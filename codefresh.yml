@@ -1,0 +1,16 @@
+version: '1.0'
+steps:
+  launch-composition:
+    title: launching composition
+    type: launch-composition
+    composition:
+      version: '3'
+        services:
+          app:
+            image: 'codefreshdemo/demochat:master'
+            links:
+              - mongo
+            ports:
+              - 5000
+          mongo:
+            image: mongo
